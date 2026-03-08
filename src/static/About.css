@@ -1,0 +1,30 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #f1f1f1;
+    /* background: linear-gradient(to right, #5b6466, #6b6d72, #685862); */
+    border-radius: 20px;
+}
+.heading{
+    color: #2f4471;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+}
+.btn-raed-more {
+    background: transparent;
+    color: black;
+    border: 1px solid #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 10rem;
+     background: linear-gradient(to right, #5b6466, #6b6d72, #685862);
+    color: white;
+    height: 72px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-resume {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.btn-resume:hover {
+    background: white;
+    color: black;
+}
+.nav-links {
+    display: flex;
+    gap: 8rem;
+}
