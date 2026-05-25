@@ -8,7 +8,7 @@ const Hero = (props) => {
       <img className='portfolio-image' src={props.image} alt="Suhail Aazam" />
       <div>
         <h1>Hi, I'm Suhail Aazam</h1>
-        <h2>Mern Stack developer in rogress</h2>
+        <h2>Mern Stack developer in progress</h2>
         
 
         <div className="hero-buttons">
