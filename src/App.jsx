@@ -14,11 +14,10 @@ function App(){
 
   <>
    <Navbar/>
-   <Hero image={image}/>
-   <About/>
-   <Skills/>
-   <Projects/>
-   <Contact/>
+   <section id="home"><Hero image={image}/></section>
+   <section id="about"><About /></section> 
+   <section id="skills"><Skills /></section>
+   <section id="projects"><Projects /></section>
   </>
 
  )

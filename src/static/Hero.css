@@ -1,37 +1,104 @@
 .heroSection {
   display: flex;
   align-items: center;
-  justify-content: left;
-  gap: 2rem;
-  height: 400px;
-  background: linear-gradient(to right, #5b6466, #6b6d72, #685862);
+  justify-content: flex-start; 
+  gap: 3rem;
+  min-height: 500px; 
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
   color: white;
- 
+  padding: 2rem 0; 
+  
 }
-h1{
-    font-size: 48px;
-    font-weight: 700px;
+
+h1 {
+  font-size: 48px;
+  font-weight: 700; 
+  margin-bottom: 0.5rem;
 }
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.5rem;
+  color: #ffffff; 
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
 .portfolio-image {
-  width: 250px; /* 48 * 4 */
-  height: 250px; /* 48 * 4 */;
+  width: 250px;
+  height: 250px;
   margin: 0 5rem;
-  border-radius: 20px;
+  border-radius: 50%;
+  object-fit: cover; 
+  
+  border: 3px solid rgba(255, 255, 255, 0.2); /* subtle border */
 }
-button {
-  background: white;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 20px;
-  transition: background-color 0.3s ease;
+
+
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
+
+
+
 .btn-download {
+  background: white;
+  color: #0f172a;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  margin: 0; 
+}
+
+.btn-download:hover {
+  opacity: 0.85;
+}
+
+
+.btn-contact {
   background: transparent;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin: 0;
 }
-.btn-download:hover {
+
+.btn-contact:hover {
   background: white;
-  color: black;
+  color: #0f172a;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.social-icons a {
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: white;
+  transform: translateY(-2px); 
 }

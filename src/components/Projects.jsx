@@ -1,3 +1,4 @@
+import '../static/Projects.css';
 
 function Projects() {
 
@@ -10,15 +11,19 @@ function Projects() {
       <div className="projects">
 
         <div className="project-card">
-          <h3>AI Resume Analyzer</h3>
+          <h3>Just Convert</h3>
           <button>Demo</button>
-          <button>Github</button>
+          <a href="https://github.com/suhail891/justConvert" target="_blank" rel="noopener noreferrer">
+            <button>Github</button>
+          </a>
         </div>
 
         <div className="project-card">
-          <h3>Loom Clone</h3>
+          <h3>Foods Reel Scrolling</h3>
           <button>Demo</button>
-          <button>Github</button>
+          <a href="https://github.com/suhail891/ds-algo-visualizer" target="_blank" rel="noopener noreferrer">
+            <button>Github</button>
+          </a>
         </div>
 
       </div>

@@ -1,17 +1,19 @@
-import React from 'react';
+import { React } from 'react';
 import '../static/Navbar.css';
+import { Link } from 'react-router-dom';
 
-const Navbar=()=> {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="nav-links">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
-      <button class="btn-resume">Resume</button>
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <button className="btn-resume">Resume</button>
+      </a>
     </nav>
   );
 }

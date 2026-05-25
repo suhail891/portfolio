@@ -1,19 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     gap: 10rem;
-     background: linear-gradient(to right, #5b6466, #6b6d72, #685862);
+    /* background: linear-gradient(to right, #5b6466, #6b6d72, #685862); */
+    background: #1a1a2e;
     color: white;
     height: 72px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #1a1a2e;
 }
+
 .btn-resume {
     background: transparent;
     border: 1px solid white;
@@ -22,10 +31,12 @@
     border-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
+
 .btn-resume:hover {
     background: white;
     color: black;
 }
+
 .nav-links {
     display: flex;
     gap: 8rem;
