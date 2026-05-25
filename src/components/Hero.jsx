@@ -16,7 +16,7 @@ const Hero = (props) => {
             <button className='btn-download'>Download Resume</button>
           </a>
           <a href="mailto:aazam.asdf@gmail.com">
-            <button className='btn-contact'>Contact Me</button>SS
+            <button className='btn-contact'>Contact Me</button>
           </a>
         </div>
 

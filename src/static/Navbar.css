@@ -1,43 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 10rem;
-    /* background: linear-gradient(to right, #5b6466, #6b6d72, #685862); */
-    background: #1a1a2e;
-    color: white;
-    height: 72px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: #1a1a2e;
-}
-
-.btn-resume {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-resume:hover {
-    background: white;
-    color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a2e;
+  color: white;
+  height: 72px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.btn-resume {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+  background: white;
+  color: black;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    gap: 8rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #1a1a2e;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    list-style: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .btn-resume {
+    width: fit-content;
+    margin: 0 auto;
+  }
 }

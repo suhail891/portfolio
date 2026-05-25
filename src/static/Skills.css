@@ -1,36 +1,92 @@
-.skills-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 5px;
-    padding: 1rem;
-    margin-top: 20px;
-    border: 1px solid #f1f1f1;
-    border-radius: 20px;
-}   
-.skills{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7rem;
-    padding: 1rem;
-    border-radius: 20px;
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 5px;
+  padding: 1.5rem;
+  margin-top: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 20px;
 }
-.card{
-    height: 200px;
-    width: 300px;
-}  
-.icons{
-    display: flex;
-    padding-top: 3rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;     
-    font-size: 2.25rem;  
-} 
 
-h2{
-    color: #2f4471;
-    font-size: 36px;
-    font-weight: bold;
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  flex-wrap: wrap; 
+}
+
+.card {
+  height: 200px;
+  width: 300px;
+}
+
+.icons {
+  display: flex;
+  padding-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2.25rem;
+}
+
+h2 {
+  color: #2f4471;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .skills {
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 250px;
+    height: auto;
+    min-height: 180px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .icons {
+    gap: 1rem;
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 1rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .icons {
+    font-size: 1.5rem;
+    gap: 0.8rem;
+    padding-top: 1rem;
+  }
 }
